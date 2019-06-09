@@ -77,7 +77,9 @@ body{
 .navbar-default .navbar-link:hover {
     color: #ffbbbc;
 }
-
+.buttonHolder{
+    text-align: center; 
+}
 /* Custom */
 .main-color-bg{
     background-color: #e74c3c !important;
