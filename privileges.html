@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10">
-                        <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Users<small>Manage Site Users</small></h1>
+                        <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Privileges<small></small></h1>
                     </div>
                     <div class="col-md-2">
                         <!--                        <div class="nav-search" id="nav-search">
@@ -125,7 +125,7 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Joined</th>
-                                        <th></th>
+                                        <th>Action</th>
                                     </tr>
                                     <tr>
                                         <td>Jill Smith</td>
@@ -185,12 +185,12 @@
                     <form>
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Add New Privileges</h4>
+                            <h4 class="modal-title" id="myModalLabel">Add New Role</h4>
                         </div>
                         <div class="modal-body">
                             <form class="form-horizontal" role="form">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Name </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> User Name </label>
 
                                     <div class="col-sm-9">
                                         <input type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
@@ -206,11 +206,10 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> First Name </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> First Name </label>
 
                                     <div class="col-sm-9">
-                                        <input type="password" id="form-field-2" placeholder="" class="col-xs-10 col-sm-5" />
-
+                                        <input type="text" id="form-field-1" placeholder="" class="col-xs-10 col-sm-5" />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -221,12 +220,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Password </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Password </label>
 
                                     <div class="col-sm-9">
-                                        <input type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <input type="password" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
                                     </div>
                                 </div>
+
                                 <div>
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Role </label>
                                     <div class="col-sm-9">
@@ -256,7 +256,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Edit User -->
         <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
