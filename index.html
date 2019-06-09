@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Non-Admin IT | Dashboard</title>
+        <title>LAPT | Dashboard</title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -29,10 +29,19 @@
                         <li><a href="privileges.html">Users</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-<!--                        <li style="font-family: serif; font-size: 20px"><a href="#"><strong>Welcome, User manager!</strong></a></li>-->
-                        <li><a href="login.html">Logout</a></li>
+                        <li class="dropdown">
+                            <img id="circle" class="nav-user-photo" style="width:40px;height:40px" src="images/thutuong.png" alt="Photo" />
+                        <li>
+                            <a data-toggle="dropdown" href="">Phoenix<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <div class="divider"></div>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
         </nav>
 
@@ -46,12 +55,10 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <!--                        <div class="nav-search" id="nav-search">
-                                                    <div class="box">-->
-                        <div class="container-1">
-                            <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="search" id="search" placeholder="Search..." />
-                        </div>
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a> </form>
+                        </li>
                     </div>
                 </div>
             </div>
@@ -70,8 +77,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="list-group">
-                            <a href="index.html" class="list-group-item active main-color-bg">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
+                            <a href="#" class="list-group-item active main-color-bg">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Management
                             </a>
                             <a href="privileges.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
                             <a href="403.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Posts</a>
@@ -104,12 +111,6 @@
                                     <div class="well dash-box">
                                         <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 203</h2>
                                         <h4><a href="privileges.html">Users</a></h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="well dash-box">
-                                        <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 12,334</h2>
-                                        <h4>Visitors</h4>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +165,7 @@
             <p style="text-align: center; font-family: serif; font-size: 15px">
                 &copy; 2019  LAPT. All right served  <br><br>
                 Contact: lapt@gmail.com<br><br>
-                Address: 9th floor in the sky<br>
+                Address: 9th floor, C Building, HANU<br>
             </p>
         </footer>
 

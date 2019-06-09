@@ -1,4 +1,3 @@
-
 /**
  * 
  *
@@ -8,5 +7,3 @@
 function editFunction(){
     alert("All changes are saved!");
 }
-
-

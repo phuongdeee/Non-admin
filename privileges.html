@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<<<<<<< HEAD
         <style>
             #box{
                 text-align: center;
@@ -15,10 +16,12 @@
                 font-size: 1.8vw;
             }
         </style>
+=======
+>>>>>>> 2f65c34cd2ca45db02fc2324ab2b4db5298d64cf
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Non-Admin IT | Privileges</title>
+        <title>LAPT | Privileges</title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -46,7 +49,17 @@
                         <li class="active"><a href="privileges.html">Users</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login.html">Logout</a></li>
+                        <li class="dropdown">
+                            <img id="circle" class="nav-user-photo" style="width:40px;height:40px" src="images/thutuong.png" alt="Photo" />
+                        <li>
+                            <a data-toggle="dropdown" href="">Phoenix<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <div class="divider"></div>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -56,15 +69,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10">
-                        <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Users Manager</h1>
+                        <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> User Manager </h1>
+                        <div style="font-family: serif; font-size: 20px ; color: white">
+                            <strong>Welcome, User manager!</strong>
+                        </div>
                     </div>
                     <div class="col-md-2">
-                        <!--                        <div class="nav-search" id="nav-search">
-                                                    <div class="box">-->
-                        <div class="container-1">
-                            <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="search" id="search" placeholder="Search..." />
-                        </div>
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a> </form>
+                        </li>
                     </div>
                 </div>
             </div>
@@ -85,9 +99,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="list-group">
-                            <a href="index.html" class="list-group-item active main-color-bg">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
-                            </a>
+                            <a href="#" class="list-group-item active main-color-bg">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Management</a>
                             <a href="privileges.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">203</span></a>
                             <a href="403.html" class="list-group-item"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Posts</a>
                             <a href="403.html" class="list-group-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Files and Folders</a>
@@ -126,13 +139,13 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Joined</th>
-                                        <th></th>
+                                        <th>Action</th>
                                     </tr>
                                     <tr>
                                         <td>Jill Smith</td>
                                         <td>jillsmith@gmail.com</td>
                                         <td>Dec 12, 2016</td>
-                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser">Edit</a> <a class="btn btn-danger" href="#"
+                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser1">Edit</a> <a class="btn btn-danger" href="#"
                                                                                                                                onclick="deleteFunction('Jill Smith')">
                                                 Delete
                                             </a></td>
@@ -141,7 +154,7 @@
                                         <td>Eve Jackson</td>
                                         <td>ejackson@yahoo.com</td>
                                         <td>Dec 13, 2016</td>
-                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser">Edit</a> <a class="btn btn-danger" href="#"
+                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser2">Edit</a> <a class="btn btn-danger" href="#"
                                                                                                                                onclick="deleteFunction('Eve Jackson')">
                                                 Delete
                                             </a></td>
@@ -150,17 +163,8 @@
                                         <td>Stephanie Landon</td>
                                         <td>landon@yahoo.com</td>
                                         <td>Dec 14, 2016</td>
-                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser">Edit</a> <a class="btn btn-danger" href="#"
+                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser3">Edit</a> <a class="btn btn-danger" href="#"
                                                                                                                                onclick="deleteFunction('Stephanie Landon')">
-                                                Delete
-                                            </a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mike Johnson</td>
-                                        <td>mjohnson@gmail.com</td>
-                                        <td>Dec 15, 2016</td>
-                                        <td><a class="btn btn-default" data-toggle="modal" data-target="#editUser">Edit</a> <a class="btn btn-danger" href="#"
-                                                                                                                               onclick="deleteFunction('Mike Johnson')">
                                                 Delete
                                             </a></td>
                                     </tr>
@@ -177,7 +181,7 @@
             <p style="text-align: center; font-family: serif; font-size: 15px">
                 &copy; 2019  LAPT. All right served  <br><br>
                 Contact: lapt@gmail.com<br><br>
-                Address: 9th floor in the sky<br>
+                Address: 9th floor, C Building, HANU<br>
             </p>
         </footer>
 
@@ -261,23 +265,23 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Edit User -->
-        <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="editUser1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <form>
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Edit Role</h4>
+                            <h4 class="modal-title" id="myModalLabel">Edit User</h4>
                         </div>
                         <div class="modal-body">
                             <form class="form-horizontal" role="form">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1">f Name </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> User Name </label>
 
                                     <div class="col-sm-9">
-                                        <input type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <input type="text" id="name" value="Jill Smith" class="form-control ">
                                     </div>
                                 </div>
 
@@ -285,30 +289,29 @@
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Email </label>
 
                                     <div class="col-sm-9">
-                                        <input type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <input type="text" id="name" value="jillsmith@gmail.com" class="form-control ">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> First Name </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> First Name </label>
 
                                     <div class="col-sm-9">
-                                        <input type="password" id="form-field-2" placeholder="" class="col-xs-10 col-sm-5" />
-
+                                        <input type="text" id="name" value="Smith" class="form-control ">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Last Name </label>
 
                                     <div class="col-sm-9">
-                                        <input type="text" id="form-field-1" placeholder="" class="col-xs-10 col-sm-5" />
+                                        <input type="text" id="name" value="Jill" class="form-control ">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Password </label>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Password </label>
 
                                     <div class="col-sm-9">
-                                        <input type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <input type="password" id="form-field-1" value="Jill" class="col-xs-10 col-sm-5" />
                                     </div>
                                 </div>
                                 <div>
@@ -331,7 +334,159 @@
                                     <div class="col-md-offset-3 col-md-9">
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary" onclick="editFunction()">Save changes</button>
+                                            <button type="submit" class="btn btn-primary" onclick="addFunction('User')">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="editUser2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Edit User</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> User Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Eve Jackson" class="form-control ">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Email </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="ejackson@yahoo.com" class="form-control ">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> First Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Jackson" class="form-control ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Last Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Eve" class="form-control ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Password </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="password" id="form-field-1" value="Jill" class="col-xs-10 col-sm-5" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Role </label>
+                                    <div class="col-sm-9">
+                                        <select type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <option value="">Author</option>
+                                        <option value="Ed">Editor</option>
+                                        <option value="Su">Subscriber</option>
+                                        <option value="Co">Contributor</option>
+                                        <option value="Au">Author</option>
+                                        <option value="Ad">Administrator</option>
+                                        <option value="">__No role for this site__</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix form-actions">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary" onclick="addFunction('User')">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="editUser3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Edit User</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> User Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Stephanie Landon" class="form-control ">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Email </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="landon@yahoo.com" class="form-control ">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> First Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Landon" class="form-control ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Last Name </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="text" id="name" value="Stephanie" class="form-control ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Password </label>
+
+                                    <div class="col-sm-9">
+                                        <input type="password" id="form-field-1" value="Jillcbf" class="col-xs-10 col-sm-5" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Role </label>
+                                    <div class="col-sm-9">
+                                        <select type="text" id="form-field-1" placeholder="required" class="col-xs-10 col-sm-5" />
+                                        <option value="">Contributor</option>
+                                        <option value="Ed">Editor</option>
+                                        <option value="Su">Subscriber</option>
+                                        <option value="Co">Contributor</option>
+                                        <option value="Au">Author</option>
+                                        <option value="Ad">Administrator</option>
+                                        <option value="">__No role for this site__</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix form-actions">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary" onclick="addFunction('User')">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
